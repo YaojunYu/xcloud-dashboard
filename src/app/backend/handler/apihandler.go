@@ -12,8 +12,8 @@ type APIHandler struct {
 	//sManager settings.SettingsManager
 }
 type Result struct {
-	Code int `json:code`
-	Message string `json:message`
+	Code int `json:"code"`
+	Message string `json:"message"`
 }
 
 func CreateHTTPAPIHandler() (http.Handler, error)  {
@@ -30,12 +30,13 @@ func CreateHTTPAPIHandler() (http.Handler, error)  {
 	wsContainer.Add(apiV1Ws)
 
 	apiV1Ws.Route(
-		apiV1Ws.GET("/login").
+		apiV1Ws.POST("/login").
 			To(apiHandler.handleLogin))
 
 	return wsContainer, nil
 }
 
+// login api
 func (apiHandler *APIHandler) handleLogin(request *restful.Request, response *restful.Response) {
 	result := Result{Code: 200, Message: "Login succeed"}
 	response.WriteHeaderAndEntity(http.StatusOK, result)
