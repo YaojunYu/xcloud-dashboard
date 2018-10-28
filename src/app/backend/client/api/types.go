@@ -1,14 +1,28 @@
+// Copyright 2017 The Kubernetes Authors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 package api
 
 import (
 	restful "github.com/emicklei/go-restful"
-	authApi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/auth/api"
-	"k8s.io/client-go/kubernetes"
+	authApi "github.com/kubernetes/dashboard/src/app/backend/auth/api"
 	"k8s.io/api/authorization/v1"
+	"k8s.io/apimachinery/pkg/runtime"
+	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/tools/clientcmd/api"
-	"k8s.io/apimachinery/pkg/runtime"
 )
 
 // ClientManager is responsible for initializing and creating clients to communicate with
@@ -37,5 +51,3 @@ type ResourceVerber interface {
 type CanIResponse struct {
 	Allowed bool `json:"allowed"`
 }
-
-
