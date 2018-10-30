@@ -15,7 +15,7 @@
 package common
 
 import (
-	"github.com/kubernetes/dashboard/src/app/backend/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/api"
 	"k8s.io/api/core/v1"
 )
 

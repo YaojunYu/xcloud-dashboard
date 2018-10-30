@@ -17,7 +17,7 @@ package ingress
 import (
 	"log"
 
-	"github.com/kubernetes/dashboard/src/app/backend/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/api"
 	extensions "k8s.io/api/extensions/v1beta1"
 	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	client "k8s.io/client-go/kubernetes"

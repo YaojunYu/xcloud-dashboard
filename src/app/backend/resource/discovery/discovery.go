@@ -17,11 +17,11 @@ package discovery
 import (
 	"log"
 
-	"github.com/kubernetes/dashboard/src/app/backend/errors"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/common"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/dataselect"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/ingress"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/service"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/errors"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/common"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/dataselect"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/ingress"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/service"
 	"k8s.io/client-go/kubernetes"
 )
 

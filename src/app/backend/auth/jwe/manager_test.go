@@ -22,9 +22,9 @@ import (
 
 	"time"
 
-	authApi "github.com/kubernetes/dashboard/src/app/backend/auth/api"
-	kdErrors "github.com/kubernetes/dashboard/src/app/backend/errors"
-	"github.com/kubernetes/dashboard/src/app/backend/sync"
+	authApi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/auth/api"
+	kdErrors "github.com/YaojunYu/xcloud-dashboard/src/app/backend/errors"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/sync"
 	"k8s.io/client-go/kubernetes/fake"
 	"k8s.io/client-go/tools/clientcmd/api"
 )

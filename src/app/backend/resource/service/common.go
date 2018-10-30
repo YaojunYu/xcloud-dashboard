@@ -15,11 +15,11 @@
 package service
 
 import (
-	"github.com/kubernetes/dashboard/src/app/backend/api"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/common"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/dataselect"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/endpoint"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/pod"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/common"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/dataselect"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/endpoint"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/pod"
 	"k8s.io/api/core/v1"
 )
 

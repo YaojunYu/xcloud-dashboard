@@ -15,9 +15,9 @@
 package logs
 
 import (
-	"github.com/kubernetes/dashboard/src/app/backend/api"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/common"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/controller"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/common"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/controller"
 	meta "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 )

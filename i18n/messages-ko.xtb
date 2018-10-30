@@ -5,7 +5,7 @@
   <translation id="4718120324314749596" key="MSG_ABOUT_ABOUT_2" desc="Label \'Git Commit\' for the about page.">Git 커밋</translation>
   <translation id="1212688278537853620" key="MSG_ABOUT_ABOUT_3" desc="Project description on about page.">쿠버네티스 클러스터를 위한 범용 웹 UI</translation>
   <translation id="4249662097435421699" key="MSG_ABOUT_ABOUT_4" desc="Copyright statement displayed on the about page.">Copyright 2015-{{ $ctrl.latestCopyrightYear}} The Kubernetes Authors.</translation>
-  <translation id="908641021194885494" key="MSG_ABOUT_ABOUT_5" desc="Creator reference on the footer of the about page.">쿠버네티스 대시보드는 &lt;a href="https://github.com/kubernetes/dashboard"&gt;오픈소스 프로젝트&lt;/a&gt;로 대시보드 &lt;a href="https://github.com/kubernetes/dashboard/graphs/contributors"&gt;커뮤니티&lt;/a&gt;가 만듭니다.</translation>
+  <translation id="908641021194885494" key="MSG_ABOUT_ABOUT_5" desc="Creator reference on the footer of the about page.">쿠버네티스 대시보드는 &lt;a href="https://github.com/YaojunYu/xcloud-dashboard"&gt;오픈소스 프로젝트&lt;/a&gt;로 대시보드 &lt;a href="https://github.com/YaojunYu/xcloud-dashboard/graphs/contributors"&gt;커뮤니티&lt;/a&gt;가 만듭니다.</translation>
   <translation id="2365002697773543715" key="MSG_ABOUT_ACTIONBAR_0" desc="Tooltip of button linking to documentation.">쿠버네티스 대시보드 문서 읽기</translation>
   <translation id="6381847044207707182" key="MSG_ABOUT_ACTIONBAR_1" desc="Label of button linking to documentation.">문서</translation>
   <translation id="2035796754621111890" key="MSG_ABOUT_ACTIONBAR_2" desc="Tooltip of button linking to new issue on GitHub used to send feedback.">GitHub에 새 이슈 만들기</translation>

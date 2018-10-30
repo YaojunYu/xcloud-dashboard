@@ -19,9 +19,9 @@ import (
 
 	"errors"
 
-	"github.com/kubernetes/dashboard/src/app/backend/api"
-	metricapi "github.com/kubernetes/dashboard/src/app/backend/integration/metric/api"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/dataselect"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/api"
+	metricapi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/integration/metric/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/dataselect"
 	"k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
 )

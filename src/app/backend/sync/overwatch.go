@@ -18,7 +18,7 @@ import (
 	"log"
 	"time"
 
-	syncApi "github.com/kubernetes/dashboard/src/app/backend/sync/api"
+	syncApi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/sync/api"
 	"k8s.io/apimachinery/pkg/util/wait"
 )
 

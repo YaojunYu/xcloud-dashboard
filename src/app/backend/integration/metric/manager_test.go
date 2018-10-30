@@ -20,9 +20,9 @@ import (
 
 	"reflect"
 
-	"github.com/kubernetes/dashboard/src/app/backend/client"
-	integrationapi "github.com/kubernetes/dashboard/src/app/backend/integration/api"
-	"github.com/kubernetes/dashboard/src/app/backend/integration/metric/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/client"
+	integrationapi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/integration/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/integration/metric/api"
 )
 
 const fakeMetricClientID integrationapi.IntegrationID = "test-id"

@@ -15,7 +15,7 @@
 package deployment
 
 import (
-	"github.com/kubernetes/dashboard/src/app/backend/resource/common"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/common"
 	apps "k8s.io/api/apps/v1beta2"
 	"k8s.io/api/core/v1"
 )

@@ -16,7 +16,7 @@
 /**
  * @fileoverview Gulp tasks for checking and validating the code or a commit.
  */
-import fs from 'fs';
+import gufs from 'fs';
 import gulp from 'gulp';
 import gulpClangFormat from 'gulp-clang-format';
 import gulpEslint from 'gulp-eslint';

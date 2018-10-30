@@ -17,7 +17,7 @@ package validation
 import (
 	"log"
 
-	kdErrors "github.com/kubernetes/dashboard/src/app/backend/errors"
+	kdErrors "github.com/YaojunYu/xcloud-dashboard/src/app/backend/errors"
 	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	client "k8s.io/client-go/kubernetes"
 )

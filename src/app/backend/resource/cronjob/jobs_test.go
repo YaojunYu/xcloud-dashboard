@@ -16,7 +16,7 @@ package cronjob_test
 
 import (
 "testing"
-"github.com/kubernetes/dashboard/src/app/backend/resource/cronjob"
+"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/cronjob"
 batch "k8s.io/api/batch/v1beta1"
 metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 "k8s.io/client-go/kubernetes/fake"

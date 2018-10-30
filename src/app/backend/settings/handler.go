@@ -18,10 +18,10 @@ import (
 	"net/http"
 
 	restful "github.com/emicklei/go-restful"
-	"github.com/kubernetes/dashboard/src/app/backend/args"
-	clientapi "github.com/kubernetes/dashboard/src/app/backend/client/api"
-	kdErrors "github.com/kubernetes/dashboard/src/app/backend/errors"
-	"github.com/kubernetes/dashboard/src/app/backend/settings/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/args"
+	clientapi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/client/api"
+	kdErrors "github.com/YaojunYu/xcloud-dashboard/src/app/backend/errors"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/settings/api"
 )
 
 // SettingsHandler manages all endpoints related to settings management.

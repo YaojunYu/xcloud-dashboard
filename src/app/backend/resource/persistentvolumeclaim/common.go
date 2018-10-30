@@ -18,9 +18,9 @@ import (
 	"log"
 	"strings"
 
-	"github.com/kubernetes/dashboard/src/app/backend/errors"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/common"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/dataselect"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/errors"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/common"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/dataselect"
 	api "k8s.io/api/core/v1"
 	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	client "k8s.io/client-go/kubernetes"

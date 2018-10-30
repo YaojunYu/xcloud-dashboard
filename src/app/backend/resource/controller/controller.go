@@ -19,9 +19,9 @@ import (
 
 	"strings"
 
-	"github.com/kubernetes/dashboard/src/app/backend/api"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/common"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/event"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/common"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/event"
 	apps "k8s.io/api/apps/v1beta2"
 	batch "k8s.io/api/batch/v1"
 	"k8s.io/api/core/v1"

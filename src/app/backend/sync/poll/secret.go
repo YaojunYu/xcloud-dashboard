@@ -17,8 +17,8 @@ package poll
 import (
 	"time"
 
-	kdErrors "github.com/kubernetes/dashboard/src/app/backend/errors"
-	syncapi "github.com/kubernetes/dashboard/src/app/backend/sync/api"
+	kdErrors "github.com/YaojunYu/xcloud-dashboard/src/app/backend/errors"
+	syncapi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/sync/api"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/apimachinery/pkg/watch"

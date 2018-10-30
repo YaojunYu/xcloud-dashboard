@@ -17,7 +17,7 @@
 # for machines that don't have nodejs, go and java installed.
 
 DOCKER_RUN_OPTS=${DOCKER_RUN_OPTS:-}
-DASHBOARD_IMAGE_NAME="kubernetes-dashboard-build-image"
+DASHBOARD_IMAGE_NAME="xcloud-dashboard-build-image"
 DEFAULT_COMMAND=${DEFAULT_COMMAND:-"node_modules/.bin/gulp"}
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 

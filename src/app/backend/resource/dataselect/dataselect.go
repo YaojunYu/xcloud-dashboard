@@ -19,7 +19,7 @@ import (
 	"log"
 	"sort"
 
-	metricapi "github.com/kubernetes/dashboard/src/app/backend/integration/metric/api"
+	metricapi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/integration/metric/api"
 )
 
 // GenericDataCell describes the interface of the data cell that contains all the necessary methods needed to perform

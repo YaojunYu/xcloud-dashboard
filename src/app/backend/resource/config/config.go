@@ -17,12 +17,12 @@ package config
 import (
 	"log"
 
-	"github.com/kubernetes/dashboard/src/app/backend/errors"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/common"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/configmap"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/dataselect"
-	pvc "github.com/kubernetes/dashboard/src/app/backend/resource/persistentvolumeclaim"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/secret"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/errors"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/common"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/configmap"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/dataselect"
+	pvc "github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/persistentvolumeclaim"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/secret"
 	"k8s.io/client-go/kubernetes"
 )
 

@@ -15,7 +15,7 @@
 package secret
 
 import (
-	"github.com/kubernetes/dashboard/src/app/backend/resource/dataselect"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/dataselect"
 	api "k8s.io/api/core/v1"
 )
 

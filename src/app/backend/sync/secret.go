@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	syncApi "github.com/kubernetes/dashboard/src/app/backend/sync/api"
-	"github.com/kubernetes/dashboard/src/app/backend/sync/poll"
+	syncApi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/sync/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/sync/poll"
 	"k8s.io/api/core/v1"
 	k8sErrors "k8s.io/apimachinery/pkg/api/errors"
 	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"

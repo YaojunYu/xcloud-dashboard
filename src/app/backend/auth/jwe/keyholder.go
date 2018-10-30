@@ -20,8 +20,8 @@ import (
 	"log"
 	"sync"
 
-	authApi "github.com/kubernetes/dashboard/src/app/backend/auth/api"
-	syncApi "github.com/kubernetes/dashboard/src/app/backend/sync/api"
+	authApi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/auth/api"
+	syncApi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/sync/api"
 	jose "gopkg.in/square/go-jose.v2"
 	"k8s.io/api/core/v1"
 	k8sErrors "k8s.io/apimachinery/pkg/api/errors"

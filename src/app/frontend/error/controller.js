@@ -145,7 +145,7 @@ export class InternalErrorController {
         `Dashboard reported ${this.getErrorStatus()}:\n\`\`\`\n${
                    this.getErrorData()}\n\`\`\`\n\n\n` +
         `##### Comments\n<!-- If you have any comments or more details, put them here. -->`;
-    return `https://github.com/kubernetes/dashboard/issues/new?title=${encodeURIComponent(title)}` +
+    return `https://github.com/YaojunYu/xcloud-dashboard/issues/new?title=${encodeURIComponent(title)}` +
         `&body=${encodeURIComponent(body)}`;
   }
 }

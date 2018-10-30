@@ -22,9 +22,9 @@ import (
 	"time"
 
 	restful "github.com/emicklei/go-restful"
-	authApi "github.com/kubernetes/dashboard/src/app/backend/auth/api"
-	"github.com/kubernetes/dashboard/src/app/backend/client"
-	clientapi "github.com/kubernetes/dashboard/src/app/backend/client/api"
+	authApi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/auth/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/client"
+	clientapi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/client/api"
 	"k8s.io/api/authorization/v1"
 	k8sErrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/client-go/kubernetes"

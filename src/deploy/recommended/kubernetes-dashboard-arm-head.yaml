@@ -18,8 +18,8 @@ apiVersion: v1
 kind: Secret
 metadata:
   labels:
-    k8s-app: kubernetes-dashboard-head
-  name: kubernetes-dashboard-certs
+    k8s-app: xcloud-dashboard-head
+  name: xcloud-dashboard-certs
   namespace: kube-system
 type: Opaque
 
@@ -30,8 +30,8 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   labels:
-    k8s-app: kubernetes-dashboard-head
-  name: kubernetes-dashboard-head
+    k8s-app: xcloud-dashboard-head
+  name: xcloud-dashboard-head
   namespace: kube-system
 
 ---
@@ -40,26 +40,26 @@ metadata:
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: kubernetes-dashboard-minimal-head
+  name: xcloud-dashboard-minimal-head
   namespace: kube-system
 rules:
-  # Allow Dashboard to create 'kubernetes-dashboard-key-holder' secret.
+  # Allow Dashboard to create 'xcloud-dashboard-key-holder' secret.
 - apiGroups: [""]
   resources: ["secrets"]
   verbs: ["create"]
-  # Allow Dashboard to create 'kubernetes-dashboard-settings' config map.
+  # Allow Dashboard to create 'xcloud-dashboard-settings' config map.
 - apiGroups: [""]
   resources: ["configmaps"]
   verbs: ["create"]
   # Allow Dashboard to get, update and delete Dashboard exclusive secrets.
 - apiGroups: [""]
   resources: ["secrets"]
-  resourceNames: ["kubernetes-dashboard-key-holder", "kubernetes-dashboard-certs"]
+  resourceNames: ["xcloud-dashboard-key-holder", "xcloud-dashboard-certs"]
   verbs: ["get", "update", "delete"]
-  # Allow Dashboard to get and update 'kubernetes-dashboard-settings' config map.
+  # Allow Dashboard to get and update 'xcloud-dashboard-settings' config map.
 - apiGroups: [""]
   resources: ["configmaps"]
-  resourceNames: ["kubernetes-dashboard-settings"]
+  resourceNames: ["xcloud-dashboard-settings"]
   verbs: ["get", "update"]
   # Allow Dashboard to get metrics from heapster.
 - apiGroups: [""]
@@ -74,15 +74,15 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: kubernetes-dashboard-minimal-head
+  name: xcloud-dashboard-minimal-head
   namespace: kube-system
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
-  name: kubernetes-dashboard-minimal-head
+  name: xcloud-dashboard-minimal-head
 subjects:
 - kind: ServiceAccount
-  name: kubernetes-dashboard-head
+  name: xcloud-dashboard-head
   namespace: kube-system
 
 ---
@@ -92,23 +92,23 @@ kind: Deployment
 apiVersion: apps/v1beta2
 metadata:
   labels:
-    k8s-app: kubernetes-dashboard-head
-  name: kubernetes-dashboard-head
+    k8s-app: xcloud-dashboard-head
+  name: xcloud-dashboard-head
   namespace: kube-system
 spec:
   replicas: 1
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      k8s-app: kubernetes-dashboard-head
+      k8s-app: xcloud-dashboard-head
   template:
     metadata:
       labels:
-        k8s-app: kubernetes-dashboard-head
+        k8s-app: xcloud-dashboard-head
     spec:
       containers:
-      - name: kubernetes-dashboard-head
-        image: kubernetesdashboarddev/kubernetes-dashboard-arm:head
+      - name: xcloud-dashboard-head
+        image: kubernetesdashboarddev/xcloud-dashboard-arm:head
         # Image is tagged and updated with :head, so always pull it.
         imagePullPolicy: Always
         ports:
@@ -121,7 +121,7 @@ spec:
           # to it. Uncomment only if the default does not work.
           # - --apiserver-host=http://my-address:port
         volumeMounts:
-        - name: kubernetes-dashboard-certs
+        - name: xcloud-dashboard-certs
           mountPath: /certs
           # Create on-disk volume to store exec logs
         - mountPath: /tmp
@@ -134,12 +134,12 @@ spec:
           initialDelaySeconds: 30
           timeoutSeconds: 30
       volumes:
-      - name: kubernetes-dashboard-certs
+      - name: xcloud-dashboard-certs
         secret:
-          secretName: kubernetes-dashboard-certs
+          secretName: xcloud-dashboard-certs
       - name: tmp-volume
         emptyDir: {}
-      serviceAccountName: kubernetes-dashboard-head
+      serviceAccountName: xcloud-dashboard-head
       # Comment the following tolerations if Dashboard must not be deployed on master
       tolerations:
       - key: node-role.kubernetes.io/master
@@ -152,12 +152,12 @@ kind: Service
 apiVersion: v1
 metadata:
   labels:
-    k8s-app: kubernetes-dashboard-head
-  name: kubernetes-dashboard-head
+    k8s-app: xcloud-dashboard-head
+  name: xcloud-dashboard-head
   namespace: kube-system
 spec:
   ports:
   - port: 443
     targetPort: 8443
   selector:
-    k8s-app: kubernetes-dashboard-head
+    k8s-app: xcloud-dashboard-head

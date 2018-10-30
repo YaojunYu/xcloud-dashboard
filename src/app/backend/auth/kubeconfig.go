@@ -17,7 +17,7 @@ package auth
 import (
 	"errors"
 
-	authApi "github.com/kubernetes/dashboard/src/app/backend/auth/api"
+	authApi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/auth/api"
 	yaml "gopkg.in/yaml.v2"
 	"k8s.io/client-go/tools/clientcmd/api"
 )

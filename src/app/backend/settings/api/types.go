@@ -24,7 +24,7 @@ import (
 
 const (
 	// SettingsConfigMapName contains a name of config map, that stores settings.
-	SettingsConfigMapName = "kubernetes-dashboard-settings"
+	SettingsConfigMapName = "xcloud-dashboard-settings"
 
 	// SettingsConfigMapNamespace contains a namespace of config map, that stores settings.
 	SettingsConfigMapNamespace = "kube-system"

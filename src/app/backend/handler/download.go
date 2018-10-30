@@ -18,7 +18,7 @@ import (
 	"io"
 
 	restful "github.com/emicklei/go-restful"
-	kdErrors "github.com/kubernetes/dashboard/src/app/backend/errors"
+	kdErrors "github.com/YaojunYu/xcloud-dashboard/src/app/backend/errors"
 )
 
 func handleDownload(response *restful.Response, result io.ReadCloser) {

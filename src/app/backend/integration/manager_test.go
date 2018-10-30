@@ -19,11 +19,11 @@ import (
 
 	"errors"
 
-	authApi "github.com/kubernetes/dashboard/src/app/backend/auth/api"
-	"github.com/kubernetes/dashboard/src/app/backend/auth/jwe"
-	"github.com/kubernetes/dashboard/src/app/backend/client"
-	"github.com/kubernetes/dashboard/src/app/backend/integration/api"
-	"github.com/kubernetes/dashboard/src/app/backend/sync"
+	authApi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/auth/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/auth/jwe"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/client"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/integration/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/sync"
 	"k8s.io/client-go/kubernetes/fake"
 )
 

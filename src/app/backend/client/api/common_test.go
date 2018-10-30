@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/kubernetes/dashboard/src/app/backend/client/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/client/api"
 	"k8s.io/api/authorization/v1"
 )
 

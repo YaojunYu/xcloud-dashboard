@@ -73,7 +73,7 @@ const version = {
 /**
  * Base name for the docker image.
  */
-const imageNameBase = 'kubernetes-dashboard';
+const imageNameBase = 'xcloud-dashboard';
 
 /**
  * Exported configuration object with common constants used in build pipeline.
@@ -83,7 +83,7 @@ export default {
    * the expression of recording version info into src/app/backend/client/manager.go
    */
   recordVersionExpression:
-      `-X github.com/kubernetes/dashboard/src/app/backend/client.Version=${version.release}`,
+      `-X github.com/YaojunYu/xcloud-dashboard/src/app/backend/client.Version=${version.release}`,
 
   /**
    * Configuration for container registry to push images to.
@@ -112,14 +112,14 @@ export default {
     /**
      * Name of the main backend package that is used in go build command.
      */
-    mainPackageName: 'github.com/kubernetes/dashboard/src/app/backend',
+    mainPackageName: 'github.com/YaojunYu/xcloud-dashboard/src/app/backend',
     /**
      * Names of all backend packages prefixed with 'test' command.
      */
     testCommandArgs:
         [
           'test',
-          'github.com/kubernetes/dashboard/src/app/backend/...',
+          'github.com/YaojunYu/xcloud-dashboard/src/app/backend/...',
         ],
     /**
      * Insecure port number of the backend server. Only used during development.
@@ -273,9 +273,9 @@ export default {
     backendSrc: path.join(basePath, 'src/app/backend'),
     backendTmp: path.join(basePath, '.tmp/backend'),
     backendTmpSrc: path.join(
-        basePath, '.tmp/backend/src/github.com/kubernetes/dashboard/src/app/backend'),
+        basePath, '.tmp/backend/src/github.com/YaojunYu/xcloud-dashboard/src/app/backend'),
     backendTmpSrcVendor: path.join(
-        basePath, '.tmp/backend/src/github.com/kubernetes/dashboard/vendor'),
+        basePath, '.tmp/backend/src/github.com/YaojunYu/xcloud-dashboard/vendor'),
     backendVendor: path.join(basePath, 'vendor'),
     build: path.join(basePath, 'build'),
     coverage: path.join(basePath, 'coverage'),

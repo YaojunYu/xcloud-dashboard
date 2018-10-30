@@ -17,12 +17,12 @@ package job
 import (
 	"log"
 
-	"github.com/kubernetes/dashboard/src/app/backend/errors"
-	metricapi "github.com/kubernetes/dashboard/src/app/backend/integration/metric/api"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/common"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/dataselect"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/event"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/pod"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/errors"
+	metricapi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/integration/metric/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/common"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/dataselect"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/event"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/pod"
 	batch "k8s.io/api/batch/v1"
 	"k8s.io/api/core/v1"
 	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"

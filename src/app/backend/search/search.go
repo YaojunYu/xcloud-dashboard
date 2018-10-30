@@ -15,14 +15,14 @@
 package search
 
 import (
-	"github.com/kubernetes/dashboard/src/app/backend/errors"
-	metricapi "github.com/kubernetes/dashboard/src/app/backend/integration/metric/api"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/cluster"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/common"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/config"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/dataselect"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/discovery"
-	"github.com/kubernetes/dashboard/src/app/backend/resource/workload"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/errors"
+	metricapi "github.com/YaojunYu/xcloud-dashboard/src/app/backend/integration/metric/api"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/cluster"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/common"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/config"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/dataselect"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/discovery"
+	"github.com/YaojunYu/xcloud-dashboard/src/app/backend/resource/workload"
 	"k8s.io/client-go/kubernetes"
 )
 

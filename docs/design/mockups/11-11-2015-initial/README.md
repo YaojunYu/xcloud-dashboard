@@ -1,7 +1,7 @@
 #Kubernetes Dashboard Design Mockups 11-11-2015
 
 ## Download Sketch File
-[Dashboard Sketch File](kubernetes-dashboard.sketch) 
+[Dashboard Sketch File](xcloud-dashboard.sketch) 
 
 ##Slides  
 ### Title
